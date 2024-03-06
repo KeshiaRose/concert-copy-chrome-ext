@@ -1,0 +1,19 @@
+{
+  "name": "Keshia Rose Personal Extension",
+  "version": "1.0.0",
+  "description": "An extension to do random repetitive workflows.",
+  "manifest_version": 3,
+  "author": "Keshia Rose",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "My Helper",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["script.js"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "permissions": ["storage", "declarativeContent", "activeTab", "scripting"]
+}
